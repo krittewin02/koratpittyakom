@@ -293,7 +293,7 @@
                 let record = snap.val() || { id, name: staff.name, date: dateStr, in: '', out: '', status: 'ปกติ' };
                 if(type === 'in') {
                     record.in = time;
-                    record.status = time > '08:30' ? 'สาย' : 'ปกติ';
+                    record.status = time > '08:00' ? 'สาย' : 'ปกติ';
                 } else {
                     record.out = time;
                 }
